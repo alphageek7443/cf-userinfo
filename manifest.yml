@@ -1,0 +1,10 @@
+---
+applications:
+  - name: cf-userinfo
+    path: app
+    memory: 256M
+    random-route: true
+    buildpacks:
+      - nodejs_buildpack
+    services:
+      - cf-userinfo-uaa
